@@ -1,3 +1,7 @@
+from numba import hip
+hip.pose_as_cuda() # now 'from numba import cuda'
+                   # and `numba.cuda` delegate to Numba HIP.
+
 from dataclasses import dataclass
 import numpy as np
 from chalk import *
