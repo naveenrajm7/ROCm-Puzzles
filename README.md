@@ -1,5 +1,5 @@
-# GPU Puzzles
-- by [Sasha Rush](http://rush-nlp.com) - [srush_nlp](https://twitter.com/srush_nlp)
+# ROCm Puzzles
+Fork of [srush/GPU-Puzzles](https://github.com/srush/GPU-Puzzles) to use [ROCm](https://github.com/ROCm) using [numba-hip](https://github.com/ROCm/numba-hip).
 
 ![](https://github.com/srush/GPU-Puzzles/raw/main/cuda.png)
 
@@ -18,13 +18,16 @@ In a few hours, I think you can go from basics to
 understanding the real algorithms that power 99% of deep learning
 today. If you do want to read the manual, it is here:
 
-[NUMBA CUDA Guide](https://numba.readthedocs.io/en/stable/cuda/index.html)
+[NUMBA HIP](https://github.com/ROCm/numba-hip)  
+> We use Numba HIP, which provides a ROCm(TM) HIP backend for Numba.
 
 I recommend doing these in Colab, as it is easy to get started.  Be
 sure to make your own copy, turn on GPU mode in the settings (`Runtime / Change runtime type`, then set `Hardware accelerator` to `GPU`), and
 then get to coding.
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/srush/GPU-Puzzles/blob/main/GPU_puzzlers.ipynb)
+> Colab does not provide AMD GPUs, so we recommend using local runtimes to connect to your ROCm setup.
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/naveenrajm7/ROCm-Puzzles/blob/main/GPU_puzzlers.ipynb)
 
 (If you are into this style of puzzle, also check out my [Tensor
 Puzzles](https://github.com/srush/Tensor-Puzzles) for PyTorch.)
@@ -34,7 +37,7 @@ Puzzles](https://github.com/srush/Tensor-Puzzles) for PyTorch.)
 
 ```python
 !pip install -qqq git+https://github.com/danoneata/chalk@srush-patch-1
-!wget -q https://github.com/srush/GPU-Puzzles/raw/main/robot.png https://github.com/srush/GPU-Puzzles/raw/main/lib.py
+!wget -q https://github.com/srush/GPU-Puzzles/raw/main/robot.png https://github.com/naveenrajm7/GPU-Puzzles/raw/main/lib.py
 ```
 
 
